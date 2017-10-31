@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
   var userinput = $("#inputNumber").val();
   var btn =$("#btnclick");
