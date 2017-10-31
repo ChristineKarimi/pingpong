@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ping Pong game</title>
-    <meta name="description" content="Ping pong game takes in a number from a user and displays the range of numbers between 1 and the input entered by the user. It then checks whether the number the divisible by 3,5 or 15 and displays "ping","pong",or 'pingpong'>
+    <meta name="description"
+    content="Ping pong game takes in a number
+     from a user and displays the range of numbers
+     between 1 and the input entered by the user. It then
+     checks whether the number the divisible by 3,5 or 15 and displays
+     'ping','pong',or 'pingpong' "/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -38,26 +43,32 @@
                         the following exceptions: <br>Numbers divisible by 3 are replaced with "ping" <br>Numbers divisible by 5
                         are replaced with "pong" <br>Numbers divisible by 15 are replaced with "pingpong"
                     </p>
-                    <form id="pingpong" action="submit">
+                    <!-- onsubmit="return false;" -->
+                    <form id="pingpong">
                         <div class="form-group" class="form-inline">
                             <label for="inputNumber">Enter a number</label>
-                            <input type="text" class="form-control" id="inputNumber">
-                            <button class="btn btn-info">Ping-Pong</button>
+                            <input type="text" class="form-control"  id="inputNumber">
+                            <button id="btnclick" class="btn btn-info">Ping-Pong</button>
                         </div>
+                        <i id="warning">meanwhile</i>
                     </form>
                 </div>
                 <div class="pad salmon">
                     <h2>Results:</h2>
                     <div>
-                        <ul id="results"></ul>
+                        <ul id="results">
+                          
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="css/jquery-3.2.1.js"></script>
-    <script src="css/bootstrap.js"></script>
-    <script src="css/scripts.js"></script>
+    <script
+  			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

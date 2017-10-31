@@ -10,22 +10,15 @@ body{
 .pad{
     height: auto;
     width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
+  margin: 20px;
     padding: 15px;
     text-align: center;
-    margin-top: 100px;
+
     border-radius: 5px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /*colors*/
 .green{
-    background: #D22CC5;
-}
-.salmon{
-   background: rgba( 255, 87, 51 , 0.5);
-}
-.lime{
-   background:  rgba(166, 177, 247 ,0.8 );
+    background: #d22c91;
 }
