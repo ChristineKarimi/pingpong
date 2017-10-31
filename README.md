@@ -1,4 +1,4 @@
-########Ping Pong Game
+##### PING PONG GAME.
 
 
 #### By Christine Karimi
