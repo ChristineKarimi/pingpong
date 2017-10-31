@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ping Pong game</title>
+    <meta name="description" content="Ping pong game where a user enters a number and the program counts to that number">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pad lime">
+        <hr>
+        <h2>Lets Ping Pong.</h2>
+        <hr>
+    </div>
+    <div class="">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="pad green">
+                    <h2> Ping Pong game:</h2>
+                    <h3>Created By:</h3>
+                    <p>christine karimi</p>
+                    <h3>Github UserName:</h3>
+                    <a href="https://github.com/waracci">christinekk</a>
+                    <p>MpFt-4 IP3</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="pad  green">
+                    <h2>Ping Pong Game</h2>
+                    <p>
+                    A web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with
+                        the following exceptions: <br>Numbers divisible by 3 are replaced with "ping" <br>Numbers divisible by 5
+                        are replaced with "pong" <br>Numbers divisible by 15 are replaced with "pingpong"
+                    </p>
+                    <form id="pingpong" action="submit">
+                        <div class="form-group" class="form-inline">
+                            <label for="inputNumber">Enter a number</label>
+                            <input type="text" class="form-control" id="inputNumber">
+                            <button class="btn btn-info">Ping-Pong</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="pad salmon">
+                    <h2>Results:</h2>
+                    <div>
+                        <ul id="results"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
