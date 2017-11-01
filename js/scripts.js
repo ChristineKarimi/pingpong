@@ -1,6 +1,9 @@
 
+
 $(document).ready(function(){
-  var userinput = $("#inputNumber").val();
+
+
+
   var btn =$("#btnclick");
   var formpingpong =$("#pingpong");
   var warning =$("#warning");
@@ -8,9 +11,11 @@ $(document).ready(function(){
   var index ;
 
 
-  formpingpong.submit(function(event){
+  formpingpong.on("submit",function(event){
+    var userinput = $("#inputNumber").val();
 
     if (userinput!="") {
+
       userinput=parseInt(userinput);
       //alert(userinput);
       for(index=0;index<=userinput;index++){
@@ -18,6 +23,7 @@ $(document).ready(function(){
         $("ul#results").prepend("<li>"+game(arraygame[index])+"</li>");
 
       }
+      //alert(arraygame);
 
 
     }else{
