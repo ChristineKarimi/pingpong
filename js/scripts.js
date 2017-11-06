@@ -8,8 +8,7 @@ $(document).ready(function(){
   var formpingpong =$("#pingpong");
   var warning =$("#warning");
   var arraygame=[];
-  var index ;
-
+  var index;
 
   formpingpong.on("submit",function(event){
     var userinput = $("#inputNumber").val();
@@ -27,7 +26,7 @@ $(document).ready(function(){
 
 
     }else{
-      warning.text(" Add something in that input field");
+
     }
     event.preventDefault()
   });
@@ -45,7 +44,11 @@ $(document).ready(function(){
       }else{
         return value;
       }
-  }
+  };
 
+  //A function to clear the input field after successful submission of a number.
+  function clearForm(form) {
+      $(':input').not(':button, :submit').val('');
+  };
 
 });
